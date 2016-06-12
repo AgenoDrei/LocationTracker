@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="lt1ab.agenodrei.lt1ab.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Time:"
+            android:layout_weight="0.6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/lableLocationTime" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:layout_weight="0.4"
+            android:id="@+id/textLocationTime"
+            android:textColor="#ff0000"
+            android:text="00 : 00"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Distance:"
+            android:layout_weight="0.6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/lableDistance" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:layout_weight="0.4"
+            android:text="9999m"
+            android:id="@+id/textDistance" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Configuration Tracker Daemon:"
+        android:id="@+id/headerConfiguration"
+        android:textStyle="bold"
+        android:layout_gravity="left"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude:"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/lableLongitude" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="0.3"
+            android:id="@+id/editLongitude" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude:"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/lableLatitude" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="0.3"
+            android:id="@+id/editLatitude" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Starte Dienst"
+        android:id="@+id/buttonStartService"
+        android:onClick="startGeoWatcher"/>
+
+</LinearLayout>
