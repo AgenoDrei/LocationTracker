@@ -84,27 +84,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Longitude:"
-            android:layout_weight="0.7"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/lableLongitude" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:layout_weight="0.3"
-            android:id="@+id/editLongitude" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="Latitude:"
             android:layout_weight="0.7"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -116,6 +95,27 @@
             android:inputType="numberDecimal"
             android:layout_weight="0.3"
             android:id="@+id/editLatitude" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude:"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/lableLongitude" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="0.3"
+            android:id="@+id/editLongitude" />
     </LinearLayout>
 
     <Button
