@@ -108,19 +108,13 @@ public class MainActivity extends Activity implements ResultCallback<Status> {
         }
         try {
             if (!mGeofencesAdded) {
-                LocationServices.GeofencingApi.addGeofences(
-                        mGoogleApiClient,
-                        geoHandler.getGeofencingRequest(),
-                        geoHandler.getGeofencePendingIntent(this)
-                ).setResultCallback(this); // Result processed in onResult().
+                LocationServices.GeofencingApi.addGeofences(mGoogleApiClient, geoHandler.getGeofencingRequest(), geoHandler.getGeofencePendingIntent(this))
+                        .setResultCallback(this); // Result processed in onResult().
                 button.setText("Stop Service");
-
             } else {
                 // Remove geofences.
-                LocationServices.GeofencingApi.removeGeofences(
-                        mGoogleApiClient,
-                        geoHandler.getGeofencePendingIntent(this)
-                ).setResultCallback(this); // Result processed in onResult().
+                LocationServices.GeofencingApi.removeGeofences(mGoogleApiClient, geoHandler.getGeofencePendingIntent(this))
+                        .setResultCallback(this); // Result processed in onResult().
                 button.setText("Starte Service");
             }
         } catch (SecurityException securityException) {
